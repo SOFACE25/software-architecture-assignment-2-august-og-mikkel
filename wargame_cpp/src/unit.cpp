@@ -5,7 +5,7 @@ Unit::Unit(int health) : health(health)
 }
 const int Unit::get_health()
 {
-    return health;
+    return this->health;
 }
 void Unit::set_health(int health)
 {
@@ -13,5 +13,5 @@ void Unit::set_health(int health)
 }
 void Unit::take_hit(int damage)
 {
-    set_health(get_health() - damage);
+    this->set_health((this->get_health()) - damage);
 }
